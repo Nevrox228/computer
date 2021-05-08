@@ -1,8 +1,7 @@
 .header {
-    height: 100vh;
+    min-height: 100vh;
     background: url('../img/bg/bg.jpg') center (center/cover) no-repeat;
     &__top {
-        // width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -15,7 +14,11 @@
                 li {
                     padding-right: 55px;
                     list-style-type: none;
+                    &:last-child {
+                        padding-right: 0;
+                    }
                     a {
+                        font-size: 16px;
                         color: #fff;
                     }
                 }
@@ -30,17 +33,19 @@
         &__time {
             display: flex;
             padding-top: 50px;
-        }
-        &__wrapper {            
-            padding-top: 20px;
-        }
+        }        
         &__item {
             width: 115px;
-            height: 112px;
+            height: 115px;
             background: #121212;
             margin-right: 30px;
             align-items: center;
-            text-align: center;            
+            text-align: center;    
+            display: flex;
+            justify-content: center;       
+            &:last-child {
+                margin-right: 0;
+            }
         }
         &-timer {            
             font-size: 36px;            
@@ -48,6 +53,9 @@
         }
         &__descr {
             font-size: 16px;
+            color: #FFFFFF;
+            opacity: 0.4;
+            line-height: 140%;
         }
     }
 }
