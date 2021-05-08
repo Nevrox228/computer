@@ -1,0 +1,39 @@
+.teacher {
+    background: url('../img/bg/bgc.jpg') center (center/cover) no-repeat;
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__icons {        
+        transform: rotate(-43deg);
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__name {
+        padding-top: 40px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        color: #fff;
+    }
+    &__txt {
+        font-size: 16px;
+        line-height: 160%;
+        padding-top: 15px;
+        color: rgba(255,255,255, 0.3);
+    }
+    &__btn {
+        background: none;
+        color: #fff;
+        border: 1px solid #FFFFFF;
+        border-radius: 50px;
+        margin-top: 30px;
+        transform: translateX(8%);
+
+    }
+}

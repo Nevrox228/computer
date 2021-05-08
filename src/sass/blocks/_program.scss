@@ -1,0 +1,68 @@
+.program {
+    background: url('../img/bg/bgc.jpg') center (center/cover) no-repeat;
+    padding: 200px 0 170px 0;
+    &__icons {
+        transform: rotate(135deg);
+    }
+    &__header {
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__blocks {
+        position: relative;
+        &__left {
+            text-align: end;
+            padding-right: 60px;
+            &:before {
+                content: '';
+                width: 6px;
+                height: 665px;
+                right: -5px;
+                top: 80px;
+                background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+                position: absolute;
+            }
+        }
+        &__right {
+            text-align: start;
+            padding-left: 60px;
+        }
+    }
+    &__item {
+        margin-top: 85px;
+        position: relative;
+        &__descr {
+            padding-top: 15px;
+            font-size: 18px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+        &__left {
+            &:after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 40px;
+                background: rgba(255,255,255, 0.3);
+                top: 45px;
+                right: -59px;
+            }
+        }
+        &__right {
+            &:before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 40px;
+                background: rgba(255,255,255, 0.3);
+                top: 45px;
+                left: -54px;
+            }
+        }
+    }
+    
+}

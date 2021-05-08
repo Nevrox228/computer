@@ -1,0 +1,26 @@
+.work {
+    padding: 270px 0 200px 0;
+    background: url('../img/bg/bgc.jpg');
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        position: relative;
+    }
+    &__computer {        
+        position: absolute;
+        top: 90px;
+        left: 37px;
+    }
+    &__descr {
+        width: 635px;
+        p {
+            padding-top: 45px;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+}

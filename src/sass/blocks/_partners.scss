@@ -1,0 +1,28 @@
+.partners {
+    background: url('../img/bg/bgc.jpg') center (center/cover) no-repeat;
+    padding-top: 200px;
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__icons {
+        transform: rotate(175deg);
+    }
+    &__wrapper {
+        padding-top: 90px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        &__bt {            
+            border-top: 1px solid rgba(255,255,255, 0.3) ;
+        }
+    }
+    &__item {
+        padding-top: 20px;
+        &__br {            
+            border-right: 1px solid rgba(255,255,255, 0.3) ;
+            padding-right: 95px;
+        }
+    }
+}

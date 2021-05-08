@@ -1,0 +1,50 @@
+.students {
+    padding: 45px 0 35px 0;
+    background: #121212;    
+    &__btn {
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+    &__cours {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 150%;
+        &__pt10 {
+            padding-top: 10px;
+        }
+    }
+    &__percent {
+        width: 715px;
+        font-size: 16px;
+        color: #fff;
+        &__top {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__line {
+            height: 6px;
+            width: 100%;            
+            border-radius: 100px;
+            background: #fff;
+            margin: 5px 0 5px 0;
+            span {                
+                background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+                width: 70%;
+                display: block;
+                height: 6px;
+                
+            }
+        }
+        &__down {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
