@@ -46,7 +46,24 @@
         nav {
             display: none;
         }
+        .hamburger {
+            display: block;
+            position: absolute;
+            height: 16px;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            top: 15px;
+            right: 10px;
+            span {
+                height: 3px;
+                width: 30px;
+                background:#fff;
+                display: block;
+            }
+        }
     }
+    
 }
 
 @media (max-width: 576px) {    
