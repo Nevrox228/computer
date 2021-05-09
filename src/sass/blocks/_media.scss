@@ -1,3 +1,9 @@
+@media (max-width: 1440px) {    
+    .container {
+       width: 1220px;
+    }
+}
+
 @media (max-width: 1300px) {    
     .container {
        width: 1140px;
@@ -7,6 +13,14 @@
 @media (max-width: 1200px) {    
     .container {
         max-width: 960px;
+    }
+    .students {
+        &__quantity {
+            width: 250px;
+        }
+        &__percent {
+            width: 500px;
+        }
     }
 }
 
@@ -36,6 +50,14 @@
             }
         }
     }
+    .students {
+        &__quantity {
+            width: 250px;
+        }
+        &__percent {
+            width: 300px;
+        }
+    }
 }
 
 @media (max-width: 768px) {    
@@ -61,9 +83,54 @@
                 background:#fff;
                 display: block;
             }
+            .active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }                        
+                    &:nth-child(2) {
+                        display: none ;
+                    }      
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+                               
+            }
+        }
+        .menu {
+            position: fixed;
+            display: block;
+            left: -100%;
+            width: 340px;
+            top: 0;
+            height: 100vh;
+            z-index: 5;
+            transition: all 0.6s;
+            visibility: hidden;
+            &.active {
+                left: 0;
+                visibility: visible;
+            }
         }
     }
-    
+    .students {
+        &__quantity {
+            width: 200px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__percent {
+            margin-top: 25px;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 576px) {    
@@ -83,6 +150,30 @@
             &__descr {
                 font-size: 12px;
             }
+        }
+    }
+    .students {
+        &__quantity {
+            margin-top: 20px;
+            width: 200px;
+            order: 2;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__percent {
+            order: 1;
+            margin-top: 0;
+            width: 100%;
+        }
+        &__btn {
+            margin-top: 20px;
+            order: 3;
         }
     }
 }

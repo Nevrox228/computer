@@ -356,6 +356,26 @@ template {
   display: none;
 }
 
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+.header .menu_item {
+  padding-right: 30px;
+  list-style-type: none;
+}
+
+.header .menu_item a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.065em;
+  font-size: 24px;
+  text-decoration: none;
+}
+
 .header__down {
   padding: 200px 0 260px 0;
 }
@@ -463,8 +483,8 @@ template {
 @media (max-width: 992px) {
   .btn {
     width: 130px;
-    height: 30px;
-    font-size: 13px;
+    height: 40px;
+    font-size: 15px;
   }
 }
 
@@ -496,7 +516,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 250px;
+  width: 100%;
   font-size: 16px;
   color: #fff;
   line-height: 150%;
@@ -506,8 +526,16 @@ template {
   padding-top: 10px;
 }
 
+.students__quantity {
+  width: 250px;
+}
+
+.students__descr {
+  font-size: 16px;
+}
+
 .students__percent {
-  width: 715px;
+  width: 680px;
   font-size: 16px;
   color: #fff;
 }
@@ -974,6 +1002,12 @@ template {
   color: #000;
 }
 
+@media (max-width: 1440px) {
+  .container {
+    width: 1220px;
+  }
+}
+
 @media (max-width: 1300px) {
   .container {
     width: 1140px;
@@ -983,6 +1017,12 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .students__quantity {
+    width: 250px;
+  }
+  .students__percent {
+    width: 500px;
   }
 }
 
@@ -1005,6 +1045,12 @@ template {
   }
   .header__down-timer {
     font-size: 28px;
+  }
+  .students__quantity {
+    width: 250px;
+  }
+  .students__percent {
+    width: 300px;
   }
 }
 
@@ -1038,6 +1084,52 @@ template {
     background: #fff;
     display: block;
   }
+  .header .hamburger .active span {
+    margin-bottom: -2px;
+  }
+  .header .hamburger .active span:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .header .hamburger .active span:nth-child(2) {
+    display: none;
+  }
+  .header .hamburger .active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+  .header .menu {
+    position: fixed;
+    display: block;
+    left: -100%;
+    width: 340px;
+    top: 0;
+    height: 100vh;
+    z-index: 5;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    visibility: hidden;
+  }
+  .header .menu.active {
+    left: 0;
+    visibility: visible;
+  }
+  .students__quantity {
+    width: 200px;
+  }
+  .students__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .students__descr {
+    font-size: 14px;
+  }
+  .students__percent {
+    margin-top: 25px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1055,5 +1147,63 @@ template {
   .header__down__descr {
     font-size: 12px;
   }
+  .students__quantity {
+    margin-top: 20px;
+    width: 200px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .students__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .students__descr {
+    font-size: 14px;
+  }
+  .students__percent {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+    width: 100%;
+  }
+  .students__btn {
+    margin-top: 20px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  height: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 15px;
+  right: 10px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

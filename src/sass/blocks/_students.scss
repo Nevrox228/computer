@@ -12,7 +12,7 @@
     &__cours {
         display: flex;
         justify-content: space-between;
-        width: 250px;
+        width: 100%;
         font-size: 16px;
         color: #fff;
         line-height: 150%;
@@ -20,8 +20,14 @@
             padding-top: 10px;
         }
     }
+    &__quantity {
+        width: 250px;
+    }
+    &__descr {
+        font-size: 16px;
+    }
     &__percent {
-        width: 715px;
+        width: 680px;
         font-size: 16px;
         color: #fff;
         &__top {
