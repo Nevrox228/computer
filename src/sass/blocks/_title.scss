@@ -17,7 +17,18 @@
             font-size: 40px;
         }
         &_fs48 {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 768px) {    
+    .title {
+        &_fs55  {
             font-size: 40px;
+        }
+        &_fs48 {
+            font-size: 30px;
         }
     }
 }
@@ -28,7 +39,7 @@
             font-size: 30px;
         }
         &_fs48 {
-            font-size: 40px;
+            font-size: 25px;
         }
     }
 }

@@ -8,6 +8,14 @@
     .container {
        width: 1140px;
     }
+    .work {
+        &__img {
+            width: 500px;
+        }
+        &__descr {
+            width: 580px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {    
@@ -20,6 +28,14 @@
         }
         &__percent {
             width: 500px;
+        }
+    }
+    .work {
+        &__img {
+            width: 410px;
+        }
+        &__descr {
+            width: 480px;
         }
     }
 }
@@ -56,6 +72,22 @@
         }
         &__percent {
             width: 300px;
+        }
+    }
+    .work {
+        &__img {
+            width: 300px;
+        }
+        &__descr {
+            width: 380px;
+            p {
+                padding-top: 15px;
+                font-size: 14px;
+            }
+        }
+        &__computer {
+            top: 60px;
+            left: 35px;
         }
     }
 }
@@ -129,6 +161,23 @@
         &__percent {
             margin-top: 25px;
             width: 100%;
+        }
+    }
+    .work {
+        padding: 80px 0 80px 0;
+        &__img {
+           display: none;
+        }
+        &__descr {
+            width: 100%;
+            p {
+                padding-top: 15px;
+                font-size: 14px;
+            }
+        }
+        &__computer {
+            top: 40px;
+            left: 28px;
         }
     }
 }

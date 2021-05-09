@@ -1,6 +1,6 @@
 .work {
     padding: 270px 0 200px 0;
-    background: url('../img/bg/bgc.jpg');
+    background: url('../img/bg/bgc.jpg') center (center/cover) no-repeat;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -8,11 +8,17 @@
     }
     &__img {
         position: relative;
+        width: 525px;
+        
     }
     &__computer {        
         position: absolute;
         top: 90px;
         left: 37px;
+        width: 85%;
+    }
+    &__box {
+        width: 100%;
     }
     &__descr {
         width: 635px;

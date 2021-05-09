@@ -311,6 +311,10 @@ template {
   padding: 0;
 }
 
+h1, h2, h3, p {
+  margin-bottom: 0;
+}
+
 .header {
   min-height: 100vh;
   background: url("../img/bg/bg.jpg") center center/cover no-repeat;
@@ -445,7 +449,16 @@ template {
     font-size: 40px;
   }
   .title_fs48 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title_fs55 {
     font-size: 40px;
+  }
+  .title_fs48 {
+    font-size: 30px;
   }
 }
 
@@ -454,7 +467,7 @@ template {
     font-size: 30px;
   }
   .title_fs48 {
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 
@@ -575,7 +588,7 @@ template {
 
 .work {
   padding: 270px 0 200px 0;
-  background: url("../img/bg/bgc.jpg");
+  background: url("../img/bg/bgc.jpg") center center/cover no-repeat;
 }
 
 .work__wrapper {
@@ -592,12 +605,18 @@ template {
 
 .work__img {
   position: relative;
+  width: 525px;
 }
 
 .work__computer {
   position: absolute;
   top: 90px;
   left: 37px;
+  width: 85%;
+}
+
+.work__box {
+  width: 100%;
 }
 
 .work__descr {
@@ -1012,6 +1031,12 @@ template {
   .container {
     width: 1140px;
   }
+  .work__img {
+    width: 500px;
+  }
+  .work__descr {
+    width: 580px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1023,6 +1048,12 @@ template {
   }
   .students__percent {
     width: 500px;
+  }
+  .work__img {
+    width: 410px;
+  }
+  .work__descr {
+    width: 480px;
   }
 }
 
@@ -1051,6 +1082,20 @@ template {
   }
   .students__percent {
     width: 300px;
+  }
+  .work__img {
+    width: 300px;
+  }
+  .work__descr {
+    width: 380px;
+  }
+  .work__descr p {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  .work__computer {
+    top: 60px;
+    left: 35px;
   }
 }
 
@@ -1129,6 +1174,23 @@ template {
   .students__percent {
     margin-top: 25px;
     width: 100%;
+  }
+  .work {
+    padding: 80px 0 80px 0;
+  }
+  .work__img {
+    display: none;
+  }
+  .work__descr {
+    width: 100%;
+  }
+  .work__descr p {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  .work__computer {
+    top: 40px;
+    left: 28px;
   }
 }
 
