@@ -15,10 +15,15 @@
     padding: 0;   
 }
 
+.icons {
+    width: 127px;
+}
+
 h1, h2, h3, p {
     margin-bottom: 0;
 }
 
+@import 'libs/animate';
 @import 'blocks/header';
 @import 'blocks/title';
 @import 'blocks/btn';

@@ -1,28 +1,45 @@
 .partners {
-    background: url('../img/bg/bgc.jpg') center (center/cover) no-repeat;
+    background: url('../img/bg/bgc.jpg')  center (center/cover) no-repeat;
     padding-top: 200px;
+    position: relative;
     &__header {
         display: flex;
         align-items: center;
     }
     &__icons {
         transform: rotate(175deg);
+        width: 110px;
     }
     &__wrapper {
         padding-top: 90px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        position: relative;
+        padding: 0 55px 0 55px; 
+        img {
+            width: 100%;
+        }
+        &__br {            
+                       
+            border-right: 2px solid #fff;
+            // &:after {
+            //     content:'';
+            //     position: absolute;
+            //     height: 93px;
+            //     right: -73px;
+            //     width: 2px;
+            //     background: rgba(255,255,255, 0.3);
+            // }            
+        }
+        
     }
     &__blocks {
         display: flex;
-        justify-content: space-between;
-        &__bt {            
-            border-top: 1px solid rgba(255,255,255, 0.3) ;
-        }
-    }
-    &__item {
-        padding-top: 20px;
-        &__br {            
-            border-right: 1px solid rgba(255,255,255, 0.3) ;
-            padding-right: 95px;
-        }
-    }
+        justify-content: space-between;    
+        &__bt {
+            border-top: solid 3px rgba(255,255,255, 0.3);
+            width: 100%;
+        }    
+    }    
 }

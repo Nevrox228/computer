@@ -7,6 +7,13 @@
     &__header {
         text-align: center;
     }
+    &__txt {
+        max-width: 420px;
+        margin: 0 auto;
+        font-size: 16px;
+        padding-top: 30px;
+        color: rgba(255,255,255, .5);
+    }
     &__wrapper {
         display: flex;
         justify-content: center;
@@ -35,6 +42,10 @@
     &__item {
         margin-top: 85px;
         position: relative;
+        &__topic {
+            color: rgba(255,255,255, .5);
+            font-size: 14px;
+        }
         &__descr {
             padding-top: 15px;
             font-size: 18px;

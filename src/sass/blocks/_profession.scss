@@ -1,24 +1,34 @@
 .profession {
     padding-top: 200px;
-    background: url('../img/bg/bgc.jpg');
+    background: url('../img/bg/bgc.jpg')  center (center/cover) no-repeat;
     &__title {
         text-align: center;
     }
     &__wrapper {
         display: flex;
+        justify-content: space-around;
         padding-top: 120px;
+        
     }
     &__item {
         text-align: center;
+        width: 360px;
+        img {
+            width: 100px;
+        }
     }
     &__txt {
         padding-top: 60px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        color:#fff;
     }
     &__descr {
         padding-top: 30px;
         color: #fff;
         font-size: 16px;
         line-height: 160%; 
-        opacity: 0.3;
+        color: rgba(255, 255, 255, 0.3)
     }
 }

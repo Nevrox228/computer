@@ -1,5 +1,5 @@
 .start {
-    background: url('../img/bg/bgc.jpg');
+    background: url('../img/bg/bgc.jpg')  center (center/cover) no-repeat;
     &__header {
         display: flex;
         align-items: center;
@@ -7,14 +7,22 @@
             padding-right: 20px;
         }
     }
+    &__icons {
+        width: 127px;
+    }
     &__wrapper {
         display: flex;
         align-items: center;
     }
-    &__img {
+    &__item {
+        margin-top: 80px;
+        width: 324px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 280px;
+        align-content: space-between;
         img {
-            margin: 0;
-            padding: 0;
+            width: 100%;
         }
     }
     &__txt {
@@ -25,40 +33,17 @@
         opacity: 0.5;
     }
     &__title {
-        padding-top: 80px;
         font-weight: bold;
         font-size: 36px;
         line-height: 140%;
-        color: #fff;
-        &_1 {
-                padding-bottom: 20px;
-        }
-        &_2 {
-                padding-bottom: 30px;
-        }
-        &_3 {
-                padding-bottom: 45px;
-        }
-        &_4 {
-            padding-bottom: 55px;
-        }
+        color: #fff;        
     }
     &__descr {
+        line-height: 160%;
+        opacity: 0.5;
         font-size: 14px;
         line-height: 160%;
         color: #fff;
-        width: 305px;
-        &_1 {
-            padding-top: 35px;
-        }
-        &_2 {
-            padding-top: 45px;
-        }
-        &_3 {
-            padding-top: 60px;
-        }
-        &_4 {
-            padding-top: 70px;
-        }
+        margin-right: 5px;
     }
 }
